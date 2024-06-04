@@ -34,8 +34,9 @@
                 <div class="navbar-nav text-end mt-3">
                     <a class="nav-link" href="/">Home</a>
                     <a class="nav-link" href="/service/cep">CEP</a>
-                    <a class="nav-link" href="/service/cnpj">CNPJ</a>
                     <a class="nav-link" href="/service/ddd">DDD</a>
+                    <a class="nav-link" href="/service/cnpj">CNPJ</a>
+                    <a class="nav-link" href="/service/banco">Bancos</a>
                 </div>
             </div>
         </div>

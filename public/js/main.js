@@ -27,7 +27,11 @@ $('#fetchData').on('submit', (e) => {
     var data = {};
 
     $('#fetchData input').each(function () {
-        data[$(this).attr('name')] = $(this).val();
+        if ($(this).attr('type') == 'datalist') {
+            data[$(this).attr('name')] = $(`datalist#${$(this).attr('list')} option[value="${$(this).val()}"]`).attr('code');
+        } else {
+            data[$(this).attr('name')] = $(this).val();
+        }
     });
 
     $.ajax({
