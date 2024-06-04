@@ -12,7 +12,7 @@
             <form class="col-lg-3 text-dark mx-3 mt-3" id="fetchData">
                 <div class="mb-3">
                     <label for="requested_cep" class="form-label">CEP:</label>
-                    <input class="form-control" type="text" name="requested_cep" placeholder="01001000" minlength="8" maxlength="8" size="8">
+                    <input class="form-control" type="text" name="requested_cep" placeholder="01001000" minlength="8" maxlength="8" size="8" required>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
