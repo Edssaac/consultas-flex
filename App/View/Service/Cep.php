@@ -32,27 +32,27 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="localidade" class="form-label">Município</label>
-                        <input type="text" class="form-control" name="localidade" placeholder="São Paulo" disabled>
+                        <input type="text" class="form-control" name="localidade" placeholder="São Paulo" disabled readonly>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="uf" class="form-label">Estado</label>
-                        <input type="text" class="form-control" name="uf" placeholder="SP" disabled>
+                        <input type="text" class="form-control" name="uf" placeholder="SP" disabled readonly>
                     </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="logradouro" class="form-label">Logradouro</label>
-                    <input type="text" class="form-control" name="logradouro" placeholder="Praça da Sé" disabled>
+                    <input type="text" class="form-control" name="logradouro" placeholder="Praça da Sé" disabled readonly>
                 </div>
 
                 <div class="mb-3">
                     <label for="bairro" class="form-label">Bairro</label>
-                    <input type="text" class="form-control" name="bairro" placeholder="Sé" disabled>
+                    <input type="text" class="form-control" name="bairro" placeholder="Sé" disabled readonly>
                 </div>
 
                 <div class="mb-3">
                     <label for="complemento" class="form-label">Complemento</label>
-                    <input type="text" class="form-control" name="complemento" placeholder="lado ímpar" disabled>
+                    <input type="text" class="form-control" name="complemento" placeholder="lado ímpar" disabled readonly>
                 </div>
 
                 <div class="row">
@@ -61,32 +61,32 @@
                             IBGE
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Instituto Brasileiro de Geografia e Estatística"></i>
                         </label>
-                        <input type="text" class="form-control" name="ibge" placeholder="3550308" disabled>
+                        <input type="text" class="form-control" name="ibge" placeholder="3550308" disabled readonly>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="gia" class="form-label">
                             GIA
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Guia de Informação e Apuração do ICMS"></i>
                         </label>
-                        <input type="text" class="form-control" name="gia" placeholder="1004" disabled>
+                        <input type="text" class="form-control" name="gia" placeholder="1004" disabled readonly>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="siafi" class="form-label">
                             SIAFI
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Sistema Integrado de Administração Financeira do Governo Federal"></i>
                         </label>
-                        <input type="text" class="form-control" name="siafi" placeholder="7107" disabled>
+                        <input type="text" class="form-control" name="siafi" placeholder="7107" disabled readonly>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="ddd" class="form-label">
                             DDD
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Discagem Direta à Distância"></i>
                         </label>
-                        <input type="text" class="form-control" name="ddd" placeholder="11" disabled>
+                        <input type="text" class="form-control" name="ddd" placeholder="11" disabled readonly>
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="cep" class="form-label">CEP</label>
-                        <input type="text" class="form-control" name="cep" placeholder="01001-000" disabled>
+                        <input type="text" class="form-control" name="cep" placeholder="01001-000" disabled readonly>
                     </div>
                 </div>
             </form>
