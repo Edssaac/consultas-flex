@@ -12,7 +12,7 @@
             <form class="col-lg-3 text-dark mx-3 mt-3" id="fetchData">
                 <div class="mb-3">
                     <label for="requested_cnpj" class="form-label">CNPJ:</label>
-                    <input class="form-control" type="text" name="requested_cnpj" placeholder="00000000000191" minlength="14" maxlength="14" size="14" required>
+                    <input class="form-control" type="text" name="requested_cnpj" id="requested_cnpj" placeholder="00000000000191" minlength="14" maxlength="14" size="14" required>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -92,7 +92,7 @@
                         <label for="municipio" class="form-label">Município</label>
                         <input type="text" class="form-control" name="municipio" placeholder="Brasília" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-1">
+                    <div class="mb-3 col-md-2">
                         <label for="uf" class="form-label">Estado</label>
                         <input type="text" class="form-control" name="uf" placeholder="DF" disabled readonly>
                     </div>
@@ -103,7 +103,7 @@
                         <label for="tipo_logradouro" class="form-label">Tipo de Logradouro</label>
                         <input type="text" class="form-control" name="tipo_logradouro" placeholder="QUADRA" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-3">
+                    <div class="mb-3 col-md-2">
                         <label for="numero" class="form-label">Número</label>
                         <input type="text" class="form-control" name="numero" placeholder="SN" disabled readonly>
                     </div>

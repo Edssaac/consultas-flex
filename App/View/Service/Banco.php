@@ -12,7 +12,7 @@
             <form class="col-lg-3 text-dark mx-3 mt-3" id="fetchData">
                 <div class="mb-3">
                     <label for="requested_bank" class="form-label">Banco:</label>
-                    <input type="datalist" class="form-control" list="bank_list" name="requested_bank" placeholder="Banco do Brasil S.A." required>
+                    <input type="datalist" class="form-control" list="bank_list" name="requested_bank" id="requested_bank" placeholder="Banco do Brasil S.A." required>
                     <datalist id="bank_list">
                         <?php if (empty($data['banks'])) { ?>
                             <option value="Nenhum banco disponível.">

@@ -38,8 +38,12 @@
                 Obtenha todos os dados disponíveis de um endereço atráves de seu CEP.
             </li>
             <li class="text-justify mb-2">
-                <a class="text-decoration-none badge rounded-pill text-bg-light" href="https://apiconsultacnpj.com.br/" target="_blank">CNPJ</a> :
+                <a class="text-decoration-none badge rounded-pill text-bg-light" href="https://apiconsultacnpj.com.br/" target="_blank">Speedio</a> :
                 Obtenha todos os dados disponíveis de uma empresa atráves de seu CNPJ.
+            </li>
+            <li class="text-justify mb-2">
+                <a class="text-decoration-none badge rounded-pill text-bg-light" href="https://brasilapi.com.br/docs" target="_blank">BrasilAPI</a> :
+                Obtenha acesso a diversos dados relacionados ao Brasil.
             </li>
         </ul>
     </div>

@@ -12,7 +12,7 @@
             <form class="col-lg-3 text-dark mx-3 mt-3" id="fetchData">
                 <div class="mb-3">
                     <label for="requested_ddd" class="form-label">DDD:</label>
-                    <input class="form-control" type="text" name="requested_ddd" placeholder="11" minlength="2" maxlength="2" size="2" required>
+                    <input class="form-control" type="text" name="requested_ddd" id="requested_ddd" placeholder="11" minlength="2" maxlength="2" size="2" required>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
