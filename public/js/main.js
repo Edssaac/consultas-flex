@@ -39,16 +39,28 @@ $('#fetchData').on('submit', (e) => {
             $('.spinner-border').removeClass('d-none');
             $('.alert').addClass('d-none');
             $('.alert').text('');
-            $('input[readonly]').val('');
+            $('input[readonly]').val('-');
+            $('table tbody').html('');
+            $('table tbody').append('<tr><td>-</td></tr>');
         },
         success: function (response) {
             if (response.data) {
                 for (field in response.data) {
                     sanitized_field = field.toLowerCase().replaceAll(' ', '_');
 
-                    if ($('input[name="' + sanitized_field + '"]').length) {
-                        $('input[name="' + sanitized_field + '"]').attr('placeholder', '');
-                        $('input[name="' + sanitized_field + '"]').val(response.data[field]);
+                    if ($.isArray(response.data[field])) {
+                        $(`table[name="${sanitized_field}"] tbody`).html('');
+
+                        response.data[field].sort();
+
+                        response.data[field].forEach((value) => {
+                            $(`table[name="${sanitized_field}"] tbody`).append(`<tr><td>${value}</td></tr>`);
+                        });
+                    } else {
+                        if ($(`input[name="${sanitized_field}"]`).length) {
+                            $(`input[name="${sanitized_field}"]`).attr('placeholder', '');
+                            $(`input[name="${sanitized_field}"]`).val(response.data[field]);
+                        }
                     }
                 }
             } else {
