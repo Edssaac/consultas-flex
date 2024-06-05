@@ -63,30 +63,26 @@
                         </label>
                         <input type="text" class="form-control" name="ibge" placeholder="3550308" disabled readonly>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <div class="col-md-3 mb-3">
                         <label for="gia" class="form-label">
                             GIA
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Guia de Informação e Apuração do ICMS"></i>
                         </label>
                         <input type="text" class="form-control" name="gia" placeholder="1004" disabled readonly>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <div class="col-md-3 mb-3">
                         <label for="siafi" class="form-label">
                             SIAFI
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Sistema Integrado de Administração Financeira do Governo Federal"></i>
                         </label>
                         <input type="text" class="form-control" name="siafi" placeholder="7107" disabled readonly>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <div class="col-md-3 mb-3">
                         <label for="ddd" class="form-label">
                             DDD
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Discagem Direta à Distância"></i>
                         </label>
                         <input type="text" class="form-control" name="ddd" placeholder="11" disabled readonly>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="cep" class="form-label">CEP</label>
-                        <input type="text" class="form-control" name="cep" placeholder="01001-000" disabled readonly>
                     </div>
                 </div>
             </form>

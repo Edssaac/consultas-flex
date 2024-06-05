@@ -58,8 +58,8 @@
                         <label for="data_abertura" class="form-label">Data de Abertura</label>
                         <input type="text" class="form-control" name="data_abertura" placeholder="01/08/1966" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-2">
-                        <label for="status" class="form-label">Status</label>
+                    <div class="mb-3 col-md-3">
+                        <label for="status" class="form-label">Situação</label>
                         <input type="text" class="form-control" name="status" placeholder="ATIVA" disabled readonly>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         <label for="email" class="form-label">E-mail</label>
                         <input type="text" class="form-control" name="email" placeholder="secex@bb.com.br" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-1">
+                    <div class="mb-3 col-md-2">
                         <label for="ddd" class="form-label">DDD</label>
                         <input type="text" class="form-control" name="ddd" placeholder="61" disabled readonly>
                     </div>
@@ -84,24 +84,35 @@
                 <hr>
 
                 <div class="row">
-                    <div class="mb-3 col-md-2">
+                    <div class="mb-3 col-md-4">
                         <label for="cep" class="form-label">CEP</label>
                         <input type="text" class="form-control" name="cep" placeholder="70040912" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-3">
+                    <div class="mb-3 col-md-4">
                         <label for="municipio" class="form-label">Município</label>
                         <input type="text" class="form-control" name="municipio" placeholder="Brasília" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-2">
+                    <div class="mb-3 col-md-4">
                         <label for="uf" class="form-label">Estado</label>
                         <input type="text" class="form-control" name="uf" placeholder="DF" disabled readonly>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="mb-3 col-md-5">
+                    <div class="mb-3 col-md-4">
                         <label for="tipo_logradouro" class="form-label">Tipo de Logradouro</label>
                         <input type="text" class="form-control" name="tipo_logradouro" placeholder="QUADRA" disabled readonly>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" name="bairro" placeholder="ASA NORTE" disabled readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-10">
+                        <label for="logradouro" class="form-label">Logradouro</label>
+                        <input type="text" class="form-control" name="logradouro" placeholder="SAUN QUADRA 5 LOTE B TORRES I, II E III" disabled readonly>
                     </div>
                     <div class="mb-3 col-md-2">
                         <label for="numero" class="form-label">Número</label>
@@ -110,18 +121,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="logradouro" class="form-label">Logradouro</label>
-                    <input type="text" class="form-control" name="logradouro" placeholder="SAUN QUADRA 5 LOTE B TORRES I, II E III" disabled readonly>
-                </div>
-
-                <div class="mb-3">
                     <label for="complemento" class="form-label">Complemento</label>
-                    <input type="text" class="form-control" name="complemento" placeholder="ANDAR 1 A 16 SALA 101 A 1601 ANDAR 1 A 16 SALA 101 A 1601 ANDAR 1 A 16 SALA 101 A 1601" disabled readonly>
-                </div>
-
-                <div class="mb-3">
-                    <label for="bairro" class="form-label">Bairro</label>
-                    <input type="text" class="form-control" name="bairro" placeholder="ASA NORTE" disabled readonly>
+                    <input type="text" class="form-control" name="complemento" placeholder="ANDAR T I SL S101 A S1602 T II SL C101 A C1602 TIII SL N101 A N1602" disabled readonly>
                 </div>
             </form>
         </div>
