@@ -40,11 +40,11 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" name="nome" placeholder="CDI" disabled readonly>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="CDI" disabled readonly>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="valor" class="form-label">Valor</label>
-                        <input type="text" class="form-control" name="valor" placeholder="10.4" disabled readonly>
+                        <input type="text" class="form-control" name="valor" id="valor" placeholder="10.4" disabled readonly>
                     </div>
                 </div>
             </form>

@@ -30,7 +30,7 @@ $('#fetchData').on('submit', (e) => {
         var input = $(this);
         var input_name = input.attr('name');
 
-        if (input.prop('type') === 'datalist') {
+        if (input.attr('type') === 'datalist') {
             var option_code = $(`datalist#${input.attr('list')} option[value="${input.val()}"]`).attr('code');
 
             data[input_name] = option_code ?? 0;

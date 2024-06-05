@@ -39,12 +39,12 @@
             <form class="col text-dark mx-3 my-3">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" name="name" placeholder="BCO DO BRASIL S.A." disabled readonly>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="BCO DO BRASIL S.A." autocomplete="." disabled readonly>
                 </div>
 
                 <div class="mb-3">
                     <label for="fullname" class="form-label">Nome Completo</label>
-                    <input type="text" class="form-control" name="fullname" placeholder="Banco do Brasil S.A." disabled readonly>
+                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Banco do Brasil S.A." disabled readonly>
                 </div>
 
                 <div class="row">
@@ -53,11 +53,11 @@
                             ISPB
                             <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" data-bs-title="Identificador de Sistema de Pagamentos Brasileiro"></i>
                         </label>
-                        <input type="text" class="form-control" name="ispb" placeholder="00000000" disabled readonly>
+                        <input type="text" class="form-control" name="ispb" id="ispb" placeholder="00000000" disabled readonly>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="code" class="form-label">Código da Instituição</label>
-                        <input type="text" class="form-control" name="code" placeholder="001" disabled readonly>
+                        <input type="text" class="form-control" name="code" id="code" placeholder="001" disabled readonly>
                     </div>
                 </div>
             </form>

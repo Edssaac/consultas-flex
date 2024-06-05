@@ -31,13 +31,16 @@
             <form class="col text-dark mx-3 my-3">
                 <div class="row align-items-baseline mb-3">
                     <label for="state" class="form-label col-auto">Estado</label>
-                    <input type="text" class="form-control col-3 col-md-2" name="state" placeholder="SP" disabled readonly>
+                    <input type="text" class="form-control col-3 col-md-2" name="state" id="state" placeholder="SP" disabled readonly>
                 </div>
 
                 <div class="mb-3">
-                    <label for="logradouro" class="form-label">Cidades</label>
-
                     <table class="table table-bordered bg-light bg-opacity-75 text-center" name="cities">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cidades</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr>
                                 <td>Lista das cidades disponíveis neste DDD.</td>

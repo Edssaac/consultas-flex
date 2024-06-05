@@ -35,12 +35,12 @@ class BancoController extends Controller
     {
         setlocale(LC_COLLATE, 'pt_BR.UTF-8');
 
-        usort($array, function ($a, $b) {
-            return strcoll($a["fullName"], $b["fullName"]);
+        $array = array_filter($array, function ($item) {
+            return $item["code"] !== NULL && $item["fullName"] !== NULL;
         });
 
-        $array = array_filter($array, function ($item) {
-            return $item["code"] !== NULL;
+        usort($array, function ($a, $b) {
+            return strcoll($a["fullName"], $b["fullName"]);
         });
 
         return $array;
