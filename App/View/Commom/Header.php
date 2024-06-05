@@ -37,6 +37,7 @@
                     <a class="nav-link" href="/service/ddd">DDD</a>
                     <a class="nav-link" href="/service/cnpj">CNPJ</a>
                     <a class="nav-link" href="/service/banco">Bancos</a>
+                    <a class="nav-link" href="/service/taxa">Taxas</a>
                 </div>
             </div>
         </div>

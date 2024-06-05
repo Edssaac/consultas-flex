@@ -28,7 +28,7 @@ $('#fetchData').on('submit', (e) => {
 
     $('#fetchData input').each(function () {
         if ($(this).attr('type') == 'datalist') {
-            data[$(this).attr('name')] = $(`datalist#${$(this).attr('list')} option[value="${$(this).val()}"]`).attr('code');
+            data[$(this).attr('name')] = $(`datalist#${$(this).attr('list')} option[value="${$(this).val()}"]`).attr('code') ?? 0;
         } else {
             data[$(this).attr('name')] = $(this).val();
         }
