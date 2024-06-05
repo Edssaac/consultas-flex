@@ -38,6 +38,7 @@
                     <a class="nav-link" href="/service/cnpj">CNPJ</a>
                     <a class="nav-link" href="/service/banco">Bancos</a>
                     <a class="nav-link" href="/service/taxa">Taxas</a>
+                    <a class="nav-link" href="/service/personalizado">Personalizado</a>
                 </div>
             </div>
         </div>

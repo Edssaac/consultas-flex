@@ -7,3 +7,7 @@
 .w-5px {
     width: 5px;
 }
+
+textarea#data {
+    min-height: 450px;
+}

@@ -26,13 +26,23 @@ $('#fetchData').on('submit', (e) => {
     var path = window.location.pathname;
     var data = {};
 
-    $('#fetchData input').each(function () {
-        if ($(this).attr('type') == 'datalist') {
-            data[$(this).attr('name')] = $(`datalist#${$(this).attr('list')} option[value="${$(this).val()}"]`).attr('code') ?? 0;
+    $('#fetchData').find('input, select, textarea').each(function () {
+        var input = $(this);
+        var input_name = input.attr('name');
+
+        if (input.prop('type') === 'datalist') {
+            var option_code = $(`datalist#${input.attr('list')} option[value="${input.val()}"]`).attr('code');
+
+            data[input_name] = option_code ?? 0;
         } else {
-            data[$(this).attr('name')] = $(this).val();
+            data[input_name] = input.val();
         }
     });
+
+    const alert_element = $('.alert');
+    const spinner_element = $('.spinner-border');
+    const read_only_inputs = $('input[readonly], textarea[readonly]');
+    const table_bodies = {};
 
     $.ajax({
         url: `${path}/getData`,
@@ -40,40 +50,54 @@ $('#fetchData').on('submit', (e) => {
         contentType: 'application/json',
         data: JSON.stringify(data),
         beforeSend: function () {
-            $('.spinner-border').removeClass('d-none');
-            $('.alert').addClass('d-none');
-            $('.alert').text('');
-            $('input[readonly]').val('-');
+            spinner_element.removeClass('d-none');
+            alert_element.addClass('d-none').text('');
+            read_only_inputs.val('');
+
             $('table tbody').html('');
             $('table tbody').append('<tr><td>-</td></tr>');
+
+            $('table').each(function () {
+                const table_name = $(this).attr('name');
+
+                table_bodies[table_name] = $(this).find('tbody');
+            });
         },
         success: function (response) {
             if (response.data) {
-                for (field in response.data) {
-                    sanitized_field = field.toLowerCase().replaceAll(' ', '_');
+                for (const field in response.data) {
+                    const sanitized_field = field.toLowerCase().replaceAll(' ', '_');
+                    let field_value = response.data[field];
 
-                    if ($.isArray(response.data[field])) {
-                        $(`table[name="${sanitized_field}"] tbody`).html('');
+                    if ($.isArray(field_value)) {
+                        const table_body = table_bodies[sanitized_field];
 
-                        response.data[field].sort();
+                        table_body.html('');
 
-                        response.data[field].forEach((value) => {
-                            $(`table[name="${sanitized_field}"] tbody`).append(`<tr><td>${value}</td></tr>`);
+                        field_value.sort().forEach(value => {
+                            table_body.append(`<tr><td>${value}</td></tr>`);
                         });
                     } else {
-                        if ($(`input[name="${sanitized_field}"]`).length) {
-                            $(`input[name="${sanitized_field}"]`).attr('placeholder', '');
-                            $(`input[name="${sanitized_field}"]`).val(response.data[field]);
+                        const element = $(`input[name="${sanitized_field}"], textarea[name="${sanitized_field}"]`);
+
+                        if (element.length) {
+                            element.attr('placeholder', '');
+
+                            if ($.isPlainObject(field_value)) {
+                                field_value = JSON.stringify(field_value, null, 2);
+                            }
+
+                            element.val(field_value);
                         }
                     }
                 }
             } else {
-                $('.alert').text(response.message ?? 'Não foi possível realizar a consulta no momento.');
-                $('.alert').removeClass('d-none');
+                alert_element.text(response.message ?? 'Não foi possível realizar a consulta no momento.');
+                alert_element.removeClass('d-none');
             }
         },
         complete: function () {
-            $('.spinner-border').addClass('d-none');
+            spinner_element.addClass('d-none');
         }
     });
 });
