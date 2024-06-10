@@ -7,9 +7,7 @@
 O Consultas Flex é uma aplicação que simplifica acesso a dados de múltiplas fontes externas, 
 incluindo APIs pré-configuradas e solicitações personalizadas, oferecendo uma experiência ágil e adaptável.
 
-<!---
-![demo](https://raw.githubusercontent.com/Edssaac/gerenciador-escolar/main/public/images/demo/school-manager.gif)
--->
+![demo](https://raw.githubusercontent.com/Edssaac/consultas-flex/main/public/images/demo/fetch-flex.gif)
 
 **Objetivo:**
 
