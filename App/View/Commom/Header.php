@@ -21,9 +21,9 @@
     <title><?= $data['title'] ?></title>
 </head>
 
-<body class="bg-dark bg-opacity-50">
+<body class="bg-opacity-50">
 
-    <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-75">
+    <nav class="navbar  navbar-light navbar-expand-lg">
         <div class="container-fluid align-items-center">
             <a class="navbar-brand" href="/">
                 <i class="fa-solid fa-bullseye"></i>

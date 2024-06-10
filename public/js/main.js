@@ -10,7 +10,7 @@ const showActiveTab = () => {
         var href = $(this).attr('href');
 
         if (path === href) {
-            $(this).addClass('active');
+            $(this).addClass('actived');
         }
     });
 }

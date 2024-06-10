@@ -1,7 +1,7 @@
 <main class="container">
-    <div class="jumbotron bg-danger bg-opacity-50 rounded text-center my-5 py-5">
+    <div class="jumbotron bg-opacity-50 rounded text-center my-5 py-5">
         <h1>Consulte seu Banco</h1>
-        <p>Escolha um banco e tenha acesso a todas as informações disponíveis</p>
+        <p class="mx-2">Escolha um banco e tenha acesso a todas as informações disponíveis</p>
     </div>
 
     <div class="alert alert-danger text-center d-none" role="alert">
@@ -16,10 +16,10 @@
                     <datalist id="bank_list">
                         <?php if (empty($data['banks'])) { ?>
                             <option value="Nenhum banco disponível.">
-                        <?php } ?>
-                        <?php foreach ($data['banks'] as $bank) { ?>
+                            <?php } ?>
+                            <?php foreach ($data['banks'] as $bank) { ?>
                             <option value="<?= $bank['fullName'] ?>" code="<?= $bank['code'] ?>">
-                        <?php } ?>
+                            <?php } ?>
                     </datalist>
                 </div>
 
@@ -33,7 +33,7 @@
             </form>
 
             <div class="col-lg-1 d-none d-lg-block">
-                <div class="bg-danger bg-opacity-50 h-100 w-5px">&nbsp;</div>
+                <div class="line bg-opacity-50 h-100 w-5px">&nbsp;</div>
             </div>
 
             <form class="col text-dark mx-3 my-3">

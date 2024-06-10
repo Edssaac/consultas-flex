@@ -4,10 +4,57 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFFF;
+}
+
+.navbar {
+    background-color: #5A72A0;
+}
+
+.nav-link:hover,
+.navbar-brand,
+.nav-link.actived {
+    color: #FFF;
+}
+
+.nav-link,
+.navbar-brand:hover {
+    color: #FFFFFF8E;
+}
+
+h1,
+h5,
+small {
+    color: #081938;
+    font-weight: bold;
+}
+
+.link {
+    background-color: #99C2FF;
+    color: #000000;
+}
+
+.link:hover {
+    color: #00215E;
+}
+
 .w-5px {
     width: 5px;
 }
 
 textarea#data {
     min-height: 450px;
+}
+
+.jumbotron {
+    background-color: #CCE0FF;
+}
+
+.card {
+    border: 5px solid #5A72A086;
+}
+
+.line {
+    background-color: #5A72A086;
 }

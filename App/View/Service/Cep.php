@@ -1,7 +1,7 @@
 <main class="container">
-    <div class="jumbotron bg-danger bg-opacity-50 rounded text-center my-5 py-5">
+    <div class="jumbotron bg-opacity-50 rounded text-center my-5 py-5">
         <h1>Consulte seu CEP</h1>
-        <p>Digite um CEP válido e tenha acesso a todas as informações disponíveis</p>
+        <p class="mx-2">Digite um CEP válido e tenha acesso a todas as informações disponíveis</p>
     </div>
 
     <div class="alert alert-danger text-center d-none" role="alert">
@@ -18,14 +18,14 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <button type="submit" class="btn btn-primary">Consultar</button>
 
-                    <div class="spinner-border text-danger text-opacity-50 d-none" role="status">
+                    <div class="spinner-border text-primary text-opacity-50 d-none" role="status">
                         <span class="visually-hidden">Carregando...</span>
                     </div>
                 </div>
             </form>
 
             <div class="col-lg-1 d-none d-lg-block">
-                <div class="bg-danger bg-opacity-50 h-100 w-5px">&nbsp;</div>
+                <div class="line bg-opacity-50 h-100 w-5px">&nbsp;</div>
             </div>
 
             <form class="col text-dark mx-3 my-3">
