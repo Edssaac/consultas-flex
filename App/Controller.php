@@ -19,11 +19,11 @@ class Controller
     protected function render(array $data = []): void
     {
         if (!isset($data['header'])) {
-            $data['header'] = 'Commom/Header';
+            $data['header'] = 'Common/Header';
         }
 
         if (!isset($data['footer'])) {
-            $data['footer'] = 'Commom/Footer';
+            $data['footer'] = 'Common/Footer';
         }
 
         if (isset($data['message'])) {
