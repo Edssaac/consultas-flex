@@ -30,53 +30,40 @@
 
             <form class="col text-dark mx-3 my-3">
                 <div class="mb-3">
-                    <label for="nome_fantasia" class="form-label">Nome Fantasia</label>
-                    <input type="text" class="form-control" name="nome_fantasia" id="nome_fantasia" placeholder="DIRECAO GERAL" disabled readonly>
+                    <label for="fantasia" class="form-label">Nome Fantasia</label>
+                    <input type="text" class="form-control" name="fantasia" id="fantasia" placeholder="DIRECAO GERAL" disabled readonly>
                 </div>
 
                 <div class="mb-3">
-                    <label for="razao_social" class="form-label">Razão Social</label>
-                    <input type="text" class="form-control" name="razao_social" id="razao_social" placeholder="BANCO DO BRASIL SA" disabled readonly>
-                </div>
-
-                <div class="mb-3">
-                    <label for="cnae_principal_descricao" class="form-label">CNAE - Descrição Principal</label>
-                    <input type="text" class="form-control" name="cnae_principal_descricao" id="cnae_principal_descricao" placeholder="Bancos múltiplos, com carteira comercial" disabled readonly>
+                    <label for="nome" class="form-label">Razão Social</label>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="BANCO DO BRASIL SA" disabled readonly>
                 </div>
 
                 <div class="row align-items-end">
-                    <div class="mb-3 col-md-3">
-                        <label for="cnae_principal_codigo" class="form-label">CNAE - Código Principal</label>
-                        <input type="text" class="form-control" name="cnae_principal_codigo" id="cnae_principal_codigo" placeholder="6422100" disabled readonly>
-                    </div>
-                    <div class="mb-3 col-md-3">
+                    <div class="mb-3 col-md-4">
                         <label for="cnpj" class="form-label">CNPJ</label>
                         <input type="text" class="form-control" name="cnpj" id="cnpj" placeholder="00000000000191" disabled readonly>
                     </div>
                     <div class="mb-3 col-md-3">
-                        <label for="data_abertura" class="form-label">Data de Abertura</label>
-                        <input type="text" class="form-control" name="data_abertura" id="data_abertura" placeholder="01/08/1966" disabled readonly>
+                        <label for="abertura" class="form-label">Data de Abertura</label>
+                        <input type="text" class="form-control" name="abertura" id="abertura" placeholder="01/08/1966" disabled readonly>
                     </div>
                     <div class="mb-3 col-md-3">
-                        <label for="status" class="form-label">Situação</label>
-                        <input type="text" class="form-control" name="status" id="status" placeholder="ATIVA" disabled readonly>
+                        <label for="situacao" class="form-label">Situação</label>
+                        <input type="text" class="form-control" name="situacao" id="situacao" placeholder="ATIVA" disabled readonly>
                     </div>
                 </div>
 
                 <hr>
 
                 <div class="row">
-                    <div class="mb-3 col-md-7">
+                    <div class="mb-3 col-md-6">
                         <label for="email" class="form-label">E-mail</label>
                         <input type="text" class="form-control" name="email" id="email" placeholder="secex@bb.com.br" autocomplete="@" disabled readonly>
                     </div>
-                    <div class="mb-3 col-md-2">
-                        <label for="ddd" class="form-label">DDD</label>
-                        <input type="text" class="form-control" name="ddd" id="ddd" placeholder="61" disabled readonly>
-                    </div>
-                    <div class="mb-3 col-md-3">
+                    <div class="mb-6 col-md-6">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="34939002" disabled readonly>
+                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="(61) 34939002" disabled readonly>
                     </div>
                 </div>
 
@@ -98,11 +85,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <label for="tipo_logradouro" class="form-label">Tipo de Logradouro</label>
-                        <input type="text" class="form-control" name="tipo_logradouro" id="tipo_logradouro" placeholder="QUADRA" disabled readonly>
-                    </div>
-                    <div class="mb-3 col-md-8">
+                    <div class="mb-3 col-md-12">
                         <label for="bairro" class="form-label">Bairro</label>
                         <input type="text" class="form-control" name="bairro" id="bairro" placeholder="ASA NORTE" disabled readonly>
                     </div>

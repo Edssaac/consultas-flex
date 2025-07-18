@@ -28,14 +28,14 @@ class CnpjController extends Controller
         if (empty($_POST['requested_cnpj']) || !preg_match('/^\d{14}$/', $_POST['requested_cnpj'])) {
             $json['message'] = 'CNPJ inválido.';
         } else {
-            $endpoint = 'https://api-publica.speedio.com.br/buscarcnpj?cnpj=' . $_POST['requested_cnpj'];
+            $endpoint = 'https://receitaws.com.br/v1/cnpj/' . $_POST['requested_cnpj'];
 
             $response = ServiceManager::request($endpoint);
 
-            if ($response['status'] == 200 && !isset($response['data']['error'])) {
+            if ($response['status'] == 200) {
                 $json['data'] = $response['data'];
             } else if ($response['status'] == 503) {
-                $json['message'] = $response['data']['detail'];
+                $json['message'] = $response['data']['message'];
             } else {
                 $json['message'] = 'CNPJ não disponível.';
             }

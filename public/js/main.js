@@ -69,7 +69,7 @@ $('#fetchData').on('submit', (e) => {
                     const sanitized_field = field.toLowerCase().replaceAll(' ', '_');
                     let field_value = response.data[field];
 
-                    if ($.isArray(field_value)) {
+                    if ($.isArray(field_value) && table_bodies[sanitized_field]) {
                         const table_body = table_bodies[sanitized_field];
 
                         table_body.html('');
