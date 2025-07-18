@@ -1,6 +1,10 @@
 $(document).ready(function () {
     showActiveTab();
     initializePopovers();
+
+    $('#requested_cep').mask('#');
+    $('#requested_cnpj').mask('#');
+    $('#requested_ddd').mask('#');
 });
 
 const showActiveTab = () => {

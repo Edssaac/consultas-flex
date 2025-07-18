@@ -32,10 +32,10 @@ class CnpjController extends Controller
 
             $response = ServiceManager::request($endpoint);
 
-            if ($response['status'] == 200) {
-                $json['data'] = $response['data'];
-            } else if ($response['status'] == 503) {
+            if (!empty($response['data']['status'])) {
                 $json['message'] = $response['data']['message'];
+            } else if ($response['status'] == 200) {
+                $json['data'] = $response['data'];
             } else {
                 $json['message'] = 'CNPJ não disponível.';
             }
