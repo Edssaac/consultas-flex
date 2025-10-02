@@ -11,20 +11,20 @@ class IndexController extends Controller
 {
     public function __construct()
     {
-        $this->data['title'] = 'Consultas Flex';
-        $this->data['content'] = 'Home/Index';
+        $this->data["title"] = "Consultas Flex";
+        $this->data["content"] = "Home/Index";
     }
 
     public function index(): void
     {
         session_start();
 
-        if (isset($_SESSION['INTERNAL_SITUATION']) && $_SESSION['INTERNAL_SITUATION'] === 500) {
-            $this->data['message'] = 'Não foi possível acessar o recurso no momento. 
+        if (isset($_SESSION["INTERNAL_SITUATION"]) && $_SESSION["INTERNAL_SITUATION"] === 500) {
+            $this->data["message"] = "Não foi possível acessar o recurso no momento. 
                 Tente novamente e se o erro persistir entre em contato com o suporte.
-            ';
+            ";
 
-            $this->data['message_type'] = 'danger';
+            $this->data["message_type"] = "danger";
         }
 
         session_destroy();

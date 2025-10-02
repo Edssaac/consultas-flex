@@ -12,8 +12,8 @@ class DddController extends Controller
 {
     public function __construct()
     {
-        $this->data['title'] = 'Consultar DDD';
-        $this->data['content'] = 'Service/Ddd';
+        $this->data["title"] = "Consultar DDD";
+        $this->data["content"] = "Service/Ddd";
     }
 
     public function index(): void
@@ -25,21 +25,21 @@ class DddController extends Controller
     {
         $json = [];
 
-        if (empty($_POST['requested_ddd']) || !preg_match('/^\d{2}$/', $_POST['requested_ddd'])) {
-            $json['message'] = 'DDD inválido.';
+        if (empty($_POST["requested_ddd"]) || !preg_match("/^\d{2}$/", $_POST["requested_ddd"])) {
+            $json["message"] = "DDD inválido.";
         } else {
-            $endpoint = 'https://brasilapi.com.br/api/ddd/v1/' . $_POST['requested_ddd'];
+            $endpoint = "https://brasilapi.com.br/api/ddd/v1/" . $_POST["requested_ddd"];
 
             $response = ServiceManager::request($endpoint);
 
-            if ($response['status'] == 200) {
-                $json['data'] = $response['data'];
+            if ($response["status"] == 200) {
+                $json["data"] = $response["data"];
             } else {
-                $json['message'] = 'DDD não disponível.';
+                $json["message"] = "DDD não disponível.";
             }
         }
 
-        header('Content-Type: application/json');
+        header("Content-Type: application/json");
         echo json_encode($json);
     }
 }

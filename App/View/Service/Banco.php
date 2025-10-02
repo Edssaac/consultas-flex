@@ -14,11 +14,11 @@
                     <label for="requested_bank" class="form-label">Banco:</label>
                     <input type="datalist" class="form-control" list="bank_list" name="requested_bank" id="requested_bank" placeholder="Banco do Brasil S.A." required>
                     <datalist id="bank_list">
-                        <?php if (empty($data['banks'])) { ?>
+                        <?php if (empty($data["banks"])) { ?>
                             <option value="Nenhum banco disponível.">
                             <?php } ?>
-                            <?php foreach ($data['banks'] as $bank) { ?>
-                            <option value="<?= $bank['fullName'] ?>" code="<?= $bank['code'] ?>">
+                            <?php foreach ($data["banks"] as $bank) { ?>
+                            <option value="<?= $bank["fullName"] ?>" code="<?= $bank["code"] ?>">
                             <?php } ?>
                     </datalist>
                 </div>

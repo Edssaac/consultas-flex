@@ -18,7 +18,7 @@
     <script src="/public/js/jquery.mask.min.js" defer></script>
     <script src="/public/js/main.js" defer></script>
 
-    <title><?= $data['title'] ?></title>
+    <title><?= $data["title"] ?></title>
 </head>
 
 <body class="bg-opacity-50">

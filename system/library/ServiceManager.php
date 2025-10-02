@@ -4,7 +4,7 @@ namespace Library;
 
 class ServiceManager
 {
-    public static function request(string $endpoint, string $method = 'GET', array $fields = [], array $headers = []): array
+    public static function request(string $endpoint, string $method = "GET", array $fields = [], array $headers = []): array
     {
         $curl = curl_init();
 
@@ -35,8 +35,8 @@ class ServiceManager
         $response = json_decode($response, true);
 
         return [
-            'status' => $http_status,
-            'data' => (is_array($response) ? $response : [])
+            "status" => $http_status,
+            "data" => (is_array($response) ? $response : [])
         ];
     }
 }

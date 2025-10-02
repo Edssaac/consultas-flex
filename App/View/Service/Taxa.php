@@ -14,11 +14,11 @@
                     <label for="requested_taxa" class="form-label">Taxa:</label>
                     <input type="datalist" class="form-control" list="taxa_list" name="requested_taxa" id="requested_taxa" placeholder="CDI" required>
                     <datalist id="taxa_list">
-                        <?php if (empty($data['taxas'])) { ?>
+                        <?php if (empty($data["taxas"])) { ?>
                             <option value="Nenhuma taxa disponível.">
                             <?php } ?>
-                            <?php foreach ($data['taxas'] as $taxa) { ?>
-                            <option value="<?= $taxa['nome'] ?>" code="<?= $taxa['nome'] ?>">
+                            <?php foreach ($data["taxas"] as $taxa) { ?>
+                            <option value="<?= $taxa["nome"] ?>" code="<?= $taxa["nome"] ?>">
                             <?php } ?>
                     </datalist>
                 </div>
